@@ -1,0 +1,15 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Available Sites
+{% endblock %}
+
+{% block body %}
+
+    <h1>Available Sites based on your search: {{ name }}</h1>
+    {% for entry in list %}
+            <li><a href="{% url 'entry' entry%}">{{ entry }}</a></li>
+    {% endfor %}
+
+
+{% endblock %}

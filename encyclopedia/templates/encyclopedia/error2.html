@@ -1,0 +1,11 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Error
+{% endblock %}
+
+{% block body %}
+    <p style="font-size:36px; text-align:center">File already exists!</p>
+    <a href="{% url 'index' %}" style="display: block">Back</a>
+
+{% endblock %}
